@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Tree</title>
+    <style>
+      .father {
+        width:45%;
+        display: flex;
+        border:dashed;
+      }
+      /* Add your css below */
+       .grandfather{
+        display:flex;
+        width:90%;
+        border:dashed;
+        
+      }
+      .uncle {
+        width:45%;
+        border:dashed;
+      }
+      .person1 {
+        display:flex;
+        border:dashed;
+      }
+      .number {
+        border:1px solid;
+      }
+      .person2 {
+        border:flex;
+        border:dashed;
+      }
+      .child {
+        border:1px solid;
+        text-align:center;
+        border:1px solid;
+      }
+      .k1{
+        background-color:rgb(255, 179, 0);
+        border:1px solid;
+
+      }
+      .k2{
+        background-color:green;
+        border:1px solid;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="grandfather">
+        <h4>grandfather</h4>
+       </div class="father">
+       <h4>father</h4>
+         <div class="person1">
+          <h4>person1</h4>
+          <div class="child"><h4>child1</h4></div>
+          <div class="child"><h4>child2</h4></div>
+          <div class="child"><h4>child4</h4>
+            <div >
+              <div class="number"><h3>1</h3></div>
+              <div class="number"><h3>2</h3></div>
+              <div class="number"><h3>3</h3></div>
+            </div>
+          </div>
+         </div>
+       <div>
+       </div class="uncle"><h3>uncle</h3>
+         <div class="person2"><h4>person2</h4>
+          <div class="child"><h4>child1</h4></div>
+          <div class="child2">
+            <div class="k1"><h3>1</h3></div>
+            <div><h3>2</h3></div>
+            <div class="k2"><h3>3</h3></div>
+          </div>
+          <div class="child"><h4>child3</h4></div>
+         </div>
+      <div>
+    </div>
+  </body>
+</html>
